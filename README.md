@@ -14,9 +14,10 @@ for the scripts to run you need to create a `.env` (or copy the template `cp .en
 PK=YOUR_PK
 MUMBAI_RPC_URL=https://rpc-mumbai.matic.today
 PROFILE_ID=PROFILE_ID
-LENS_API=https://api-mumbai.lens.dev/
+LENS_API=https://api-v2-mumbai-live.lens.dev/
 LENS_HUB_CONTRACT=0xC1E77eE73403B8a7478884915aA599932A677870
 LENS_PERIPHERY_CONTRACT=0xc3a1fabd7f8d290f7b0C45AA88af6e9c9E267843
+LENS_TOKEN_HANDLE_REGISTRY_CONTRACT=0xc3a1fabd7f8d290f7b0C45AA88af6e9c9E267843
 INFURA_PROJECT_ID=YOUR_INFURA_PROJECT_ID
 INFURA_SECRET=YOUR_INFURA_SECRET
 ```
@@ -35,6 +36,11 @@ example running:
 
 ```bash
 $ npm run authentication:login
+```
+after login you can create your profile on testnet using:
+
+```bash
+$ npm run profile:create-profile-with-handle
 ```
 
 ## Issues
